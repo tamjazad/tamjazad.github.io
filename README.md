@@ -1,2 +1,2 @@
 # tamjazad.github.io
-necessary webpage
+personal webpage code
