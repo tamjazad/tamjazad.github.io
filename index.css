@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Asap|Solway&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Asap|Solway|Quicksand|Eczar&display=swap");
 
 a:link, a:visited {
 	color: green;
@@ -13,12 +13,13 @@ h1 {
 	font-size: 50px;
 	text-align: center;
 	font-family: 'Solway', serif;
+	font-weight: bold;
 }
 
 p {
 	font-size: 20px;
 	text-align: center;
-	font-family: 'Asap', sans-serif;
+	font-family: 'Solway', serif;
 }
 
 img {
