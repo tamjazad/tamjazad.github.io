@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Asap|Solway&display=swap");
 
+a:link, a:visited {
+	color: green;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color: #01FF70;
+}
+
 h1 {
 	font-size: 50px;
 	text-align: center;
