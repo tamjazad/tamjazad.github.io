@@ -30,10 +30,36 @@ p:hover {
 	color: #568EA6;
 }
 
+body::selection {
+	background-color: #FFCD94;
+}
+
+h1::selection {
+	background-color: #FFCD94;
+}
+
+p::selection {
+	background-color: #FFCD94;
+	color: #568EA6;
+}
+
+a::selection {
+	background-color: #FFCD94;
+}
+
+#firstname::selection, #lastname::selection {
+	background-color: #FFCD94;
+	color: #C06C84;
+}
+
 img {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
 	border-radius: 7px;
+}
+
+img::selection {
+	background-color: #FFCD94;
 }
