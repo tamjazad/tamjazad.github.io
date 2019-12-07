@@ -16,10 +16,18 @@ h1 {
 	font-weight: bold;
 }
 
+#firstname:hover, #lastname:hover {
+	color: #C06C84;
+}
+
 p {
 	font-size: 20px;
 	text-align: center;
 	font-family: 'Solway', serif;
+}
+
+p:hover {
+	color: #568EA6;
 }
 
 img {
