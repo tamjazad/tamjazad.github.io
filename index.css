@@ -3,31 +3,37 @@
 a:link, a:visited {
 	color: green;
 	text-decoration: none;
+	-webkit-transition: color 0.3s;
 }
 
 a:hover, a:active {
 	color: #01FF70;
+	transition: 0.3s;
 }
 
-h1 {
+h1, #firstname, #lastname {
 	font-size: 50px;
 	text-align: center;
 	font-family: 'Solway', serif;
 	font-weight: bold;
+	-webkit-transition: color 0.3s;
 }
 
 #firstname:hover, #lastname:hover {
 	color: #C06C84;
+	transition: 0.3s;
 }
 
 p {
 	font-size: 20px;
 	text-align: center;
 	font-family: 'Solway', serif;
+	-webkit-transition: color 0.3s;
 }
 
 p:hover {
 	color: #568EA6;
+	transition: 0.3s;
 }
 
 body::selection {
