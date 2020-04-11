@@ -12,10 +12,9 @@ a:hover, a:active {
 }
 
 h1, #firstname, #lastname {
-	font-size: 25px;
+	font-size: 30px;
 	text-align: center;
 	font-family: 'Solway', serif;
-	font-weight: bold;
 	-webkit-transition: color 0.3s;
 }
 
