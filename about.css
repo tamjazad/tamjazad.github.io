@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Asap|Solway|Quicksand|Eczar&display=swap");
+
+a:link, a:visited {
+	color: green;
+	text-decoration: none;
+	-webkit-transition: color 0.3s;
+}
+
+a:hover, a:active {
+	color: #01FF70;
+	-webkit-transition: 0.3s;
+}
+
+h1, #firstname, #lastname {
+	font-size: 30px;
+	text-align: center;
+	font-family: 'Solway', serif;
+	-webkit-transition: color 0.3s;
+}
+
+#firstname:hover, #lastname:hover {
+	color: #C06C84;
+	transition: 0.3s;
+}
+
+p {
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Solway', serif;
+	-webkit-transition: color 0.3s;
+}
+
+#bio:hover {
+	color: #568EA6;
+	-webkit-transition: 0.3s;
+}
+
+#biography {
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	max-width: 100%;
+}
+
+body::selection {
+	background-color: #FFCD94;
+}
+
+h1::selection {
+	background-color: #FFCD94;
+}
+
+p::selection {
+	background-color: #FFCD94;
+	color: #568EA6;
+}
+
+a::selection {
+	background-color: #FFCD94;
+}
+
+#firstname::selection, #lastname::selection {
+	background-color: #FFCD94;
+	color: #C06C84;
+}
+
+#email:link, #email:visited {
+	color: crimson;
+}
+
+#email:hover, #email:active {
+	color: #C06C84;
+	-webkit-transition: 0.3s;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+	border-radius: 7px;
+}
+
+img::selection {
+	background-color: #FFCD94;
+}
