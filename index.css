@@ -1,86 +1,95 @@
-@import url("https://fonts.googleapis.com/css?family=Asap|Solway|Quicksand|Eczar&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Solway&family=Josefin+Slab&display=swap');
 
-a:link, a:visited {
-	color: green;
-	text-decoration: none;
-	-webkit-transition: color 0.3s;
+:root {
+  --selectioncolor: #FFCD94;
 }
 
-a:hover, a:active {
-	color: #01FF70;
-	-webkit-transition: 0.3s;
+body { margin: 0; }
+
+canvas {
+
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h1, #firstname, #lastname {
-	font-size: 30px;
-	text-align: center;
-	font-family: 'Solway', serif;
-	-webkit-transition: color 0.3s;
+#msgcontainer {
+   position: absolute;
+   z-index: 5;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   opacity: 90%;
 }
 
 #firstname:hover, #lastname:hover {
-	color: #C06C84;
-	transition: 0.3s;
+  color: #08e8de;
+  transition: 0.3s;
 }
 
-p {
-	font-size: 20px;
-	text-align: center;
-	font-family: 'Solway', serif;
-	-webkit-transition: color 0.3s;
+h1, #firstname, #lastname {
+  text-align: center;
+  font-family: 'Josefin Slab', serif;
+  font-size: 50px;
+  -webkit-transition: color 0.3s;
 }
 
-#bio:hover {
-	color: #568EA6;
-	-webkit-transition: 0.3s;
+#bio {
+  text-align: center;
+  font-family: 'Solway', cursive;
+  font-size: 20px;
 }
 
-#biography {
-	margin-left: auto;
-	margin-right: auto;
-	width: 500px;
-	max-width: 100%;
+#links {
+  background-color: #e6e6ff;
+  border-radius: 5px;
+}
+
+a:link, a:visited {
+  color: green;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+}
+
+a:hover, a:active {
+  color: #01FF70;
+  -webkit-transition: 0.3s;
 }
 
 body::selection {
-	background-color: #FFCD94;
+	background-color: var(--selectioncolor);
 }
 
 h1::selection {
-	background-color: #FFCD94;
+	background-color: var(--selectioncolor);
 }
 
 p::selection {
-	background-color: #FFCD94;
+	background-color: var(--selectioncolor);
 	color: #568EA6;
 }
 
 a::selection {
-	background-color: #FFCD94;
+	background-color: var(--selectioncolor);
 }
 
 #firstname::selection, #lastname::selection {
-	background-color: #FFCD94;
-	color: #C06C84;
+	background-color: var(--selectioncolor);
+	color: #08e8de;;
 }
 
 #email:link, #email:visited {
 	color: crimson;
+  background-color: #e6e6ff;
+  border-radius: 5px;
 }
 
 #email:hover, #email:active {
 	color: #C06C84;
+  background-color: #e6e6ff;
 	-webkit-transition: 0.3s;
-}
-
-img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 200px;
-	border-radius: 7px;
-}
-
-img::selection {
-	background-color: #FFCD94;
+  border-radius: 5px;
 }
