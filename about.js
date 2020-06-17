@@ -46,13 +46,13 @@ camera.position.z = 500;
 function animate() {
   requestAnimationFrame( animate );
   torus.rotation.x += 0.005;
-  torus.rotation.y += 0.015;
+  torus.rotation.y -= 0.015;
   torus_outline.rotation.x += 0.005;
-  torus_outline.rotation.y += 0.015;
-  dodec.rotation.x += -0.01;
-  dodec.rotation.y -= 0.005;
-  dodec_outline.rotation.x += -0.01;
-  dodec_outline.rotation.y += -0.005;
+  torus_outline.rotation.y -= 0.015;
+  dodec.rotation.x += 0.01;
+  dodec.rotation.y += 0.005;
+  dodec_outline.rotation.x += 0.01;
+  dodec_outline.rotation.y += 0.005;
 
   renderer.render( scene, camera );
 }
