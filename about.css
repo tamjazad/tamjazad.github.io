@@ -40,8 +40,9 @@ h1, #firstname, #lastname {
   text-align: center;
   font-family: 'Solway', cursive;
   font-size: 20px;
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(221, 81, 127, 1);
   border-radius: 5px;
+  color: white;
 }
 
 #links {

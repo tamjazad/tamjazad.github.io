@@ -9,21 +9,21 @@ var color = new THREE.Color( 0xffffff );
 renderer.setClearColor( color );
 document.body.appendChild( renderer.domElement );
 
-var torus_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
+var torus_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 1, 2 );
 var torus_material = new THREE.MeshBasicMaterial({
-  color : 0x66ff99
+  color : 0x461e52
 });
 var torus = new THREE.Mesh( torus_geo, torus_material );
 
 var dodec_geo = new THREE.DodecahedronGeometry( 50, 0 );
 var dodec_material = new THREE.MeshBasicMaterial({
-  color : 0xfa8072
+  color : 0xe68e36
 });
 var dodec = new THREE.Mesh( dodec_geo, dodec_material );
 
-var torus_outline_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 2, 3 );
-var t_outline_material = new THREE.MeshNormalMaterial({
-  color : 0x58cced,
+var torus_outline_geo = new THREE.TorusKnotGeometry( 150, 25, 100, 10, 1, 2 );
+var t_outline_material = new THREE.MeshBasicMaterial({
+  color : 0xdd517f,
   wireframe : true
 });
 var torus_outline = new THREE.Mesh( torus_outline_geo, t_outline_material );
