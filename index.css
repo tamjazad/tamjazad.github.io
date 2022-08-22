@@ -27,7 +27,8 @@ canvas {
 
 #firstname:hover, #lastname:hover {
   color: #08e8de;
-  transition: 0.3s;
+  transition: color 0.3s;
+  -webkit-transition: color 0.3s;
 }
 
 h1, #firstname, #lastname {
@@ -35,6 +36,7 @@ h1, #firstname, #lastname {
   font-family: 'Josefin Slab', serif;
   font-size: 50px;
   -webkit-transition: color 0.3s;
+  transition: color 0.3s;
   font-weight: bold;
 }
 
@@ -53,11 +55,13 @@ a:link, a:visited {
   color: green;
   text-decoration: none;
   -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 a:hover, a:active {
   color: #01FF70;
-  -webkit-transition: 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 body::selection {
@@ -82,15 +86,18 @@ a::selection {
 	color: #08e8de;;
 }
 
-#email {
+#contact {
 	color: crimson;
   background-color: #e6e6ff;
   border-radius: 5px;
+	-webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-#email:hover {
+#contact:hover {
 	color: #C06C84;
   background-color: #e6e6ff;
-	-webkit-transition: 0.3s;
+	-webkit-transition: color 0.3s;
+  transition: color 0.3s;
   border-radius: 5px;
 }
