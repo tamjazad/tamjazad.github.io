@@ -82,13 +82,13 @@ a::selection {
 	color: #08e8de;;
 }
 
-#email:link, #email:visited {
+#email {
 	color: crimson;
   background-color: #e6e6ff;
   border-radius: 5px;
 }
 
-#email:hover, #email:active {
+#email:hover {
 	color: #C06C84;
   background-color: #e6e6ff;
 	-webkit-transition: 0.3s;
