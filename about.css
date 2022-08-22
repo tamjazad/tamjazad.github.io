@@ -34,6 +34,7 @@ h1, #firstname, #lastname {
   font-family: 'Josefin Slab', serif;
   font-size: 50px;
   -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 #bio {
@@ -45,6 +46,36 @@ h1, #firstname, #lastname {
   color: white;
 }
 
+#aboutbuttons {
+  text-align: center;
+  font-family: 'Solway', cursive;
+  font-size: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+#nextbutton {
+  text-align: center;
+  font-family: 'Solway', cursive;
+  font-size: 20px;
+  background-color: rgba(221, 81, 127, 1);
+  border-radius: 5px;
+  color: white; 
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+#nextbutton:hover {
+  text-align: center;
+  font-family: 'Solway', cursive;
+  font-size: 20px;
+  background-color: rgba(221, 81, 127, 1);
+  border-radius: 5px;
+  color: #01FF70; 
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 #links {
   background-color: #e6e6ff;
   border-radius: 5px;
@@ -54,11 +85,13 @@ a:link, a:visited {
   color: green;
   text-decoration: none;
   -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 a:hover, a:active {
   color: #01FF70;
   -webkit-transition: 0.3s;
+  transition: color 0.3s;
 }
 
 body::selection {
@@ -93,5 +126,6 @@ a::selection {
 	color: #C06C84;
   background-color: #e6e6ff;
 	-webkit-transition: 0.3s;
+  transition: color 0.3s;
   border-radius: 5px;
 }
