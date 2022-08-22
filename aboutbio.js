@@ -14,7 +14,8 @@ nextbutton.onclick = () => {
     } else if (click == 1) {
         x.innerHTML = 
         `
-        (3/6) during my undergrad, i was privileged to work closely with Dr. Elham Azizi, with whom i 
+        (3/6) during my undergrad, i was privileged to work closely with 
+        <a id="proflinks" href="https://www.azizilab.com">Dr. Elham Azizi</a>, with whom i 
         collaborated on multiple projects applying and developing machine learning methods 
         to and for single-cell genomics. my application projects focused on data in 
         immunological contexts.
@@ -23,8 +24,15 @@ nextbutton.onclick = () => {
     } else if (click == 2) {
         x.innerHTML = 
         `
-        (4/6) beyond those projects, i'm grateful to have also worked with Dr. Tal Danino at columbia, as well as 
-        Dr. Hong Qin and Dr. Hope Klug at the university of tennessee at chattanooga.
+        (4/6) beyond those projects, i'm grateful to have also worked with <a id="proflinks" 
+        href="https://daninolab.nyc">Dr. Tal Danino</a> at columbia, as well as 
+        <a id="proflinks" 
+        href="https://www.utc.edu/directory/cnb331-college-of-engineering-and-computer-science-hong-qin/cnb331">
+        Dr. Hong Qin</a> and 
+        <a id="proflinks" 
+        href="https://www.utc.edu/directory/wxs271-biology-geology-and-environmental-science-hope-klug/wxs271">
+        Dr. Hope Klug</a>
+         at the university of tennessee at chattanooga.
         `;
         click = 3;
     } else if (click == 3) {

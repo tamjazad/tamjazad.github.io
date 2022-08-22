@@ -81,6 +81,13 @@ h1, #firstname, #lastname {
   border-radius: 5px;
 }
 
+#proflinks {
+  color: gold;
+  text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 a:link, a:visited {
   color: green;
   text-decoration: none;
@@ -89,6 +96,12 @@ a:link, a:visited {
 }
 
 a:hover, a:active {
+  color: #01FF70;
+  -webkit-transition: 0.3s;
+  transition: color 0.3s;
+}
+
+#proflinks:hover, #proflinks:active {
   color: #01FF70;
   -webkit-transition: 0.3s;
   transition: color 0.3s;
