@@ -14,7 +14,7 @@ nextbutton.onclick = () => {
     } else if (click == 1) {
         x.innerHTML = 
         `
-        (3/6) during my undergrad, i was privileged to work closely with Elham Azizi, with whom i 
+        (3/6) during my undergrad, i was privileged to work closely with Dr. Elham Azizi, with whom i 
         collaborated on multiple projects applying and developing machine learning methods 
         to and for single-cell genomics. my application projects focused on data in 
         immunological contexts.
@@ -23,8 +23,8 @@ nextbutton.onclick = () => {
     } else if (click == 2) {
         x.innerHTML = 
         `
-        (4/6) beyond those projects, i'm grateful to have also worked with Tal Danino at columbia, as well as 
-        Hong Qin and Hope Klug at the university of tennessee at chattanooga.
+        (4/6) beyond those projects, i'm grateful to have also worked with Dr. Tal Danino at columbia, as well as 
+        Dr. Hong Qin and Dr. Hope Klug at the university of tennessee at chattanooga.
         `;
         click = 3;
     } else if (click == 3) {
