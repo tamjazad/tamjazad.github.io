@@ -42,6 +42,7 @@ h1, #firstname, #lastname {
   font-family: 'Solway', cursive;
   font-size: 20px;
   background-color: rgba(221, 81, 127, 1);
+  padding-left: 3px;
   border-radius: 5px;
   color: white;
 }
@@ -140,5 +141,23 @@ a::selection {
   background-color: #e6e6ff;
 	-webkit-transition: 0.3s;
   transition: color 0.3s;
+  border-radius: 5px;
+}
+
+#contact {
+	color: #021691;
+  background-color: #e6e6ff;
+  border-radius: 5px;
+  padding: 3px;
+	-webkit-transition: color 0.3s, padding 0.3s;
+  transition: color 0.3s, padding 0.3s;
+}
+
+#contact:hover {
+	color: #021691;
+  background-color: #e6e6ff;
+  padding: 6px;
+	-webkit-transition: color 0.3s, padding 0.3s;
+  transition: color 0.3s, padding 0.3s;
   border-radius: 5px;
 }
