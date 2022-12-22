@@ -25,7 +25,9 @@ nextbutton.onclick = () => {
         x.innerHTML = 
         `
         (4/6) beyond those projects, i'm grateful to have also worked with <a id="proflinks" 
-        href="https://daninolab.nyc">Prof. Tal Danino</a> at columbia, as well as 
+        href="https://pritykinlab.github.io">Prof. Yuri Pritykin</a> at princeton,
+        <a id="proflinks" 
+        href="https://daninolab.nyc">Prof. Tal Danino</a> at columbia, as well as
         <a id="proflinks" 
         href="https://www.utc.edu/directory/cnb331-college-of-engineering-and-computer-science-hong-qin/cnb331">
         Prof. Hong Qin</a> and 
@@ -50,8 +52,12 @@ nextbutton.onclick = () => {
         click = 5;
     } else if (click == 5) {
         x.innerHTML = `
-        (1/6) i'm a phd student in computer science at princeton university.
-        i focus primarily in the intersection of single-cell genomics and machine learning.
+        (1/6) i'm a phd student in computer science at princeton university, advised by 
+        <a id="proflinks" 
+        href="https://www.cs.princeton.edu/~zhonge/">
+        Prof. Ellen Zhong</a>.
+        i focus on the intersection of structural biology and machine learning, particularly 
+        algorithms for 3D protein structure reconstruction from cryo-EM imaging.
         `;
         click = 0;
     }
