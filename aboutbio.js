@@ -24,8 +24,7 @@ nextbutton.onclick = () => {
     } else if (click == 2) {
         x.innerHTML = 
         `
-        (4/6) beyond those projects, i'm grateful to have also worked with <a id="proflinks" 
-        href="https://pritykinlab.github.io">Prof. Yuri Pritykin</a> at princeton,
+        (4/6) beyond those projects, i'm grateful to have also worked with
         <a id="proflinks" 
         href="https://daninolab.nyc">Prof. Tal Danino</a> at columbia, as well as
         <a id="proflinks" 
@@ -52,12 +51,8 @@ nextbutton.onclick = () => {
         click = 5;
     } else if (click == 5) {
         x.innerHTML = `
-        (1/6) i'm a phd student in computer science at princeton university, advised by 
-        <a id="proflinks" 
-        href="https://www.cs.princeton.edu/~zhonge/">
-        Prof. Ellen Zhong</a>.
-        i focus on the intersection of structural biology and machine learning, particularly 
-        algorithms for 3D protein structure reconstruction from cryo-EM imaging.
+        (1/6) i'm a phd student in computer science at princeton university.
+        i focus on the intersection of genomics and machine learning.
         `;
         click = 0;
     }
