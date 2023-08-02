@@ -51,8 +51,10 @@ nextbutton.onclick = () => {
         click = 5;
     } else if (click == 5) {
         x.innerHTML = `
-        (1/6) i'm a phd student in computer science at princeton university.
-        i focus on the intersection of genomics and machine learning.
+        (1/6) i'm a phd student in computer science at princeton university, advised by 
+        <a id="proflinks" href="https://pritykinlab.github.io">Prof. Yuri Pritykin</a>.
+        my research is in single-cell genomics, currently focusing on topics in 
+        cell communication and spatial transcriptomics.
         `;
         click = 0;
     }
