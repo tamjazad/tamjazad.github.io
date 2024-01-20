@@ -15,16 +15,14 @@ nextbutton.onclick = () => {
         x.innerHTML = 
         `
         (3/6) during my undergrad, i was privileged to work closely with 
-        <a id="proflinks" href="https://www.azizilab.com">Prof. Elham Azizi</a>, with whom i 
-        collaborated on multiple projects applying and developing machine learning methods 
-        to and for single-cell genomics. my application projects focused on data in 
-        immunological contexts.
+        <a id="proflinks" href="https://www.azizilab.com">Prof. Elham Azizi</a>, who introduced me to single-cell
+        transcriptomics, primarily in the context of cancer immunology.
         `;
         click = 2;
     } else if (click == 2) {
         x.innerHTML = 
         `
-        (4/6) beyond those projects, i'm grateful to have also worked with
+        (4/6) beyond that, i'm grateful to have also worked with
         <a id="proflinks" 
         href="https://daninolab.nyc">Prof. Tal Danino</a> at columbia, as well as
         <a id="proflinks" 
