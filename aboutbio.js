@@ -15,8 +15,8 @@ nextbutton.onclick = () => {
         x.innerHTML = 
         `
         (3/6) during my undergrad, i was privileged to work closely with 
-        <a id="proflinks" href="https://www.azizilab.com">Prof. Elham Azizi</a>, who introduced me to single-cell
-        transcriptomics, primarily in the context of cancer immunology.
+        <a id="proflinks" href="https://www.azizilab.com">Prof. Elham Azizi</a>, who first introduced me to my 
+        broad research area.
         `;
         click = 2;
     } else if (click == 2) {
