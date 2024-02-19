@@ -36,7 +36,8 @@ nextbutton.onclick = () => {
         click = 3;
     } else if (click == 3) {
         x.innerHTML = `
-        (5/6) i also spent two summers working as a software development engineer intern at amazon, working
+        (5/6) i also spent two summers working as a software development engineer intern at 
+        <a id="proflinks" href="https://www.amazon.com/">amazon</a>, working
         on the items and offers platform within amazon selection and catalog systems.
         `;
         click = 4;
