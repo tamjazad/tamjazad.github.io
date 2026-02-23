@@ -43,18 +43,27 @@ scene.add( dodec_outline );
 
 camera.position.z = 500;
 
-function animate() {
+// Use time-based animation so rotation speed is consistent across browsers
+var lastTime = performance.now();
+var torusVel = { x: 0.005 * 60, y: -0.015 * 60 };
+var dodecVel = { x: 0.01 * 60, y: 0.005 * 60 };
+
+function animate(time) {
   requestAnimationFrame( animate );
-  torus.rotation.x += 0.005;
-  torus.rotation.y -= 0.015;
-  torus_outline.rotation.x += 0.005;
-  torus_outline.rotation.y -= 0.015;
-  dodec.rotation.x += 0.01;
-  dodec.rotation.y += 0.005;
-  dodec_outline.rotation.x += 0.01;
-  dodec_outline.rotation.y += 0.005;
+  if (time === undefined) time = performance.now();
+  var delta = (time - lastTime) / 1000;
+  lastTime = time;
+
+  torus.rotation.x += torusVel.x * delta;
+  torus.rotation.y += torusVel.y * delta;
+  torus_outline.rotation.x += torusVel.x * delta;
+  torus_outline.rotation.y += torusVel.y * delta;
+  dodec.rotation.x += dodecVel.x * delta;
+  dodec.rotation.y += dodecVel.y * delta;
+  dodec_outline.rotation.x += dodecVel.x * delta;
+  dodec_outline.rotation.y += dodecVel.y * delta;
 
   renderer.render( scene, camera );
 }
 
-animate();
+requestAnimationFrame( animate );

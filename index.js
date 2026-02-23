@@ -40,14 +40,27 @@ scene.add( thirdtorus );
 
 camera.position.z = 500;
 
-function animate() {
+// Use time-based animation so rotation speed is consistent across browsers
+var lastTime = performance.now();
+// per-frame increments converted to per-second velocities (approx at 60fps)
+var torusVel = { x: 0.005 * 60, y: 0.01 * 60 };
+var secondTorVel = { x: -0.01 * 60, y: -0.02 * 60 };
+var thirdTorVel = { x: 0.005 * 60, y: 0.01 * 60 };
+
+function animate(time) {
   requestAnimationFrame( animate );
-  torus.rotation.x += 0.005;
-  torus.rotation.y += 0.01;
-  secondtorus.rotation.x -= 0.01;
-  secondtorus.rotation.y -= 0.02;
-  thirdtorus.rotation.x += 0.005;
-  thirdtorus.rotation.y += 0.01;
+  if (time === undefined) time = performance.now();
+  var delta = (time - lastTime) / 1000; // seconds
+  lastTime = time;
+
+  torus.rotation.x += torusVel.x * delta;
+  torus.rotation.y += torusVel.y * delta;
+  secondtorus.rotation.x += secondTorVel.x * delta;
+  secondtorus.rotation.y += secondTorVel.y * delta;
+  thirdtorus.rotation.x += thirdTorVel.x * delta;
+  thirdtorus.rotation.y += thirdTorVel.y * delta;
+
   renderer.render( scene, camera );
 }
-animate();
+
+requestAnimationFrame( animate );

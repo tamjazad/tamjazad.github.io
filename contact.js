@@ -43,18 +43,27 @@ scene.add( inner_torus_outline );
 
 camera.position.z = 500;
 
-function animate() {
+// Use time-based animation so rotation speed is consistent across browsers
+var lastTime = performance.now();
+var torusVel = { x: 0.01 * 60, y: -0.005 * 60 };
+var innerTorVel = { x: -0.01 * 60, y: -0.005 * 60 };
+
+function animate(time) {
   requestAnimationFrame( animate );
-  torus.rotation.x += 0.01;
-  torus.rotation.y -= 0.005;
-  torus_outline.rotation.x += 0.01;
-  torus_outline.rotation.y -= 0.005;
-  inner_torus.rotation.x -= 0.01;
-  inner_torus.rotation.y -= 0.005;
-  inner_torus_outline.rotation.x -= 0.01;
-  inner_torus_outline.rotation.y -= 0.005;
+  if (time === undefined) time = performance.now();
+  var delta = (time - lastTime) / 1000;
+  lastTime = time;
+
+  torus.rotation.x += torusVel.x * delta;
+  torus.rotation.y += torusVel.y * delta;
+  torus_outline.rotation.x += torusVel.x * delta;
+  torus_outline.rotation.y += torusVel.y * delta;
+  inner_torus.rotation.x += innerTorVel.x * delta;
+  inner_torus.rotation.y += innerTorVel.y * delta;
+  inner_torus_outline.rotation.x += innerTorVel.x * delta;
+  inner_torus_outline.rotation.y += innerTorVel.y * delta;
 
   renderer.render( scene, camera );
 }
 
-animate();
+requestAnimationFrame( animate );
