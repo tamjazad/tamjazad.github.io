@@ -52,8 +52,8 @@ nextbutton.onclick = () => {
         x.innerHTML = `
         (1/6) i'm a phd student in computer science at princeton university, advised by 
         <a id="proflinks" href="https://pritykinlab.github.io">Prof. Yuri Pritykin</a>.
-        my research is in single-cell genomics, currently focusing on topics in 
-        cell communication and spatial transcriptomics.
+        i develop computational methods that enable novel insights into spatial organization and cell communication in complex tissues, 
+        particularly in cancer and immune contexts.
         `;
         click = 0;
     }
